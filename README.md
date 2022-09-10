@@ -27,13 +27,22 @@ There are different options for using this script.
 
 ### Variant 1: On Heroku
 
-- Click on [![Deploy](https://www.herokucdn.com/deploy/button.svg)][heroku]
+- Click on <a href="https://heroku.com/deploy?template=https://github.com/timoschlueter/nightscout-librelink-up"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Render" height="32"></a>
 - Login to Heroku if not already happened
 - Provide proper values for the `environment variables`
 - **Important: make sure that yor Nightscout API token is hashed with SHA1**
 - Click `Deploy` to deploy the app
+- 
+### Variant 2: On Render
 
-### Variant 2: Local
+- Click on <a href="https://render.com/deploy?repo=https://github.com/timoschlueter/nightscout-librelink-up"><img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" height="32"></a>
+- Login to Render.com if not already happened
+- Provide a unique name for the service
+- Provide proper values for the `environment variables`
+- **Important: make sure that yor Nightscout API token is hashed with SHA1**
+- Wait for the Re-deployment of the service
+
+### Variant 3: Local
 
 The installation process can be startetd by running `npm install` in the root directory.
 
@@ -54,7 +63,7 @@ npm start
 
 Execute the script and check the console output.
 
-### Variant 3: Docker
+### Variant 4: Docker
 
 The easiest way to use this is to use the latest docker image:
 
@@ -68,7 +77,7 @@ docker run -e LINK_UP_USERNAME="mail@example.com" \
            timoschlueter/nightscout-librelink-up
 ```
 
-### Variant 4: Docker Compose
+### Variant 5: Docker Compose
 
 If you are already using a dockerized Nightscout instance, this image can be easily added to your existing
 docker-compose file. In this example, the region is set for germany ("DE"):
