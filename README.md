@@ -3,7 +3,8 @@
 Simple Script written in JavaScript (Node) that uploads CGM readings from LibreLink Up to Nightscout. The upload should
 work with at least Freestyle Libre 2 (FGM) and Libre 3 CGM sensors.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)][heroku]
+<a href="https://heroku.com/deploy?template=https://github.com/timoschlueter/nightscout-librelink-up"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Render" height="32"></a> 
+<a href="https://render.com/deploy?repo=https://github.com/timoschlueter/nightscout-librelink-up"><img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" height="32"></a>
 
 ## Configuration
 
@@ -93,5 +94,3 @@ services:
 
 - **Integration into Nightscout**: I have not yet looked into the plugin architecture of Nightscout. Maybe this should
   be converted into a plugin.
-
-[heroku]: https://heroku.com/deploy?template=https://github.com/timoschlueter/nightscout-librelink-up

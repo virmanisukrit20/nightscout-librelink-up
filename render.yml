@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: nightscout-librelink-up
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: LINK_UP_USERNAME
+      - key: LINK_UP_PASSWORD
+      - key: LINK_UP_CONNECTION
+      - key: LINK_UP_TIME_INTERVAL
+        value: 5
+      - key: LINK_UP_REGION
+        value: EU
+      - key: NIGHTSCOUT_URL
+      - key: NIGHTSCOUT_API_TOKEN
+      - key: LOG_LEVEL
+        value: info
