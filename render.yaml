@@ -6,18 +6,18 @@ services:
     startCommand: npm start
     envVars:
       - key: LINK_UP_USERNAME
-        sync: false
+        value:
       - key: LINK_UP_PASSWORD
-        sync: false
+        value:
       - key: LINK_UP_CONNECTION
-        sync: false
+        value:
       - key: LINK_UP_TIME_INTERVAL
         value: 5
       - key: LINK_UP_REGION
         value: EU
       - key: NIGHTSCOUT_URL
-        sync: false
+        value:
       - key: NIGHTSCOUT_API_TOKEN
-        sync: false
+        value:
       - key: LOG_LEVEL
         value: info
