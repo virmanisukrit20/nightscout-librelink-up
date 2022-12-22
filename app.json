@@ -3,12 +3,12 @@
   "description": "Uploads your Blood Glucose from LibreLinkUp to your Nightscout",
   "formation": {
     "web": {
-      "quantity": 0,
-      "size": "free"
+      "quantity": 1,
+      "size": "eco"
     },
     "worker": {
       "quantity": 1,
-      "size": "free"
+      "size": "eco"
     }
   },
   "env": {
